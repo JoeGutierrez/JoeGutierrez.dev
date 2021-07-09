@@ -7,17 +7,18 @@
 
 					<div class="section-title">
 						<h2>About</h2>
-						<p>Welcome to my online portfolio. I'm Joe, a Full Stack Engineer since 2010. My passion for programming and note-taking comes from having studied Computer Science and Journalism in college. I have experience in information systems with a career history of achievement, facilitating company growth through the implementation and maintenance of progressive IT, web application and automation initiatives.</p>
+<?php // 				<p>Welcome to my online portfolio. I'm Joe, a Full Stack Engineer since 2010. My passion for programming and note-taking comes from having studied Computer Science and Journalism in college. I have experience in information systems with a career history of achievement, facilitating company growth through the implementation and maintenance of progressive IT, web application and automation initiatives.</p> ?>
 					</div>
 
-					<div class="row">
-						<div class="col-lg-4 text-center">
+					<div class="row" style="justify-content: center;">
+						<div class="col-lg-3 text-center">
 							<img data-src="/img/joe.jpg" class="img-fluid lozad" alt="">
 						</div>
-						<div class="col-lg-8 pt-4 pt-lg-0 content">
+						<div class="col-lg-6 pt-4 pt-lg-0 content">
 							<h3>Full Stack Engineer</h3>
-							<p class="font-italic">Possessing a unique combination of analytical expertise and creative know-how, my abilities include: Linux, SQL, JavaScript, PHP, Nginx, Apache and Node.js. I'm also passionate about data analytics, consuming and scaling web APIs, AJAX and the Laravel framework.</p>
-							<div class="row">
+							<p>Welcome to my online portfolio, my name is Joe Gutierrez. I'm currently working as a Senior Web Developer. My passion for programming and note-taking comes from having studied Computer Science and Journalism in college. I have experience in information systems with a career history of achievement, facilitating company growth through the implementation and maintenance of progressive IT, web application and automation initiatives.</p>
+							<p>Possessing a unique combination of analytical expertise and creative know-how, my abilities include: Linux, SQL, JavaScript, PHP, Nginx, Apache and Node.js. I'm also passionate about data analytics, consuming and scaling web APIs, AJAX and the Laravel framework.</p>
+<?php /*					<div class="row">
 								<div class="col-lg-6">
 									<ul>
 										<li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>1 May 1995</span></li>
@@ -35,7 +36,8 @@
 									</ul>
 								</div>
 							</div>
-							<p>Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.</p>
+*/ ?>
+<?php //					<p>Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.</p> ?>
 						</div>
 					</div>
 
@@ -98,7 +100,7 @@
 
 					<div class="section-title">
 						<h2>Tech Stack</h2>
-						<p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+<?php //				<p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> ?>
 					</div>
 
 					<div class="row skills-content">
@@ -194,14 +196,14 @@
 							</div>
 
 							<div class="progress">
-								<span class="skill">Adobe Creative Suite<i class="val">100%</i></span>
+								<span class="skill">Bootstrap<i class="val">100%</i></span>
 								<div class="progress-bar-wrap">
 									<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
 								</div>
 							</div>
 
 							<div class="progress">
-								<span class="skill">Bootstrap<i class="val">100%</i></span>
+								<span class="skill">Adobe Creative Suite<i class="val">100%</i></span>
 								<div class="progress-bar-wrap">
 									<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
 								</div>
@@ -265,7 +267,7 @@
 						<div class="col-lg-6">
 							<h3 class="resume-title">Professional Experience</h3>
 							<div class="resume-item">
-								<h4>Web Developer</h4>
+								<h4>Senior Web Developer</h4>
 								<h5><i class="bi bi-calendar3"></i> 2020 - Present</h5>
 								<p><em>Nevada Corporate Headquarters, Las Vegas, NV</em></p>
 								<ul>
@@ -325,7 +327,7 @@
 
 					<div class="section-title">
 						<h2>Portfolio</h2>
-						<p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+<?php //				<p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> ?>
 					</div>
 
 					<div class="row">

@@ -14,7 +14,7 @@ class JGDevController extends Controller
 		return view( 'project-template', [
 			'title' => 'Condor Elite',
 			'category' => 'Ecommerce',
-			'tech_stack' => 'Magento, PHP, jQuery Mobile, CSS, JavaScript, jQuery',
+			'tech_stack' => 'Magento, PHP, Bootstrap, CSS, JavaScript, jQuery',
 			'url' => 'https://www.condor-elite.com/',
 			'description' => 'Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.',
 			'imgs' => [ 'ce-1.jpg', 'ce-2.jpg', 'ce-3.jpg' ],
@@ -25,7 +25,7 @@ class JGDevController extends Controller
 		return view( 'project-template', [
 			'title' => 'Discount Dance',
 			'category' => 'Ecommerce',
-			'tech_stack' => 'PHP, jQuery Mobile, CSS, JavaScript, jQuery, New Relic, Mouseflow, InkSoft',
+			'tech_stack' => 'SQL, PHP, jQuery Mobile, CSS, JavaScript, jQuery, New Relic, Mouseflow API, InkSoft API',
 			'url' => 'https://www.discountdance.com/',
 			'description' => 'Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.',
 			'imgs' => [ 'dd-1.jpg', 'dd-2.jpg', 'dd-3.jpg' ],
@@ -46,8 +46,8 @@ class JGDevController extends Controller
 	public function nevada_corporate_headquarters() {
 		return view( 'project-template', [
 			'title' => 'Nevada Corporate Headquarters',
-			'category' => 'Laravel',
-			'tech_stack' => 'Laravel, Bootstrap',
+			'category' => 'Web, Lead Collection, Forms, Landing Pages',
+			'tech_stack' => 'Laravel, Bootstrap, PHP, SQL, jQuery, AJAX',
 			'url' => 'https://www.nchinc.com/',
 			'description' => 'Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.',
 			'imgs' => [ 'nch-1.jpg', 'nch-2.jpg', 'nch-3.jpg' ],
@@ -68,7 +68,7 @@ class JGDevController extends Controller
 	public function csc() {
 		return view( 'project-template', [
 			'title' => 'Corporate Service Center',
-			'category' => 'Laravel',
+			'category' => 'Web, Landing Page, Lead Collection',
 			'tech_stack' => 'Laravel, Bootstrap',
 			'url' => 'https://www.corporateservicecenter.com/',
 			'description' => 'Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.',
@@ -91,7 +91,7 @@ class JGDevController extends Controller
 		return view( 'project-template', [
 			'title' => 'Paul Tzanetopoulos',
 			'category' => 'Art, Personal, Biography, Portfolio, Blog',
-			'tech_stack' => 'WordPress, Avada, Custom Post Type',
+			'tech_stack' => 'WordPress, Avada, Custom Post Type, CSS',
 			'url' => 'https://www.paultzanetopoulos.com/',
 			'description' => 'Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.',
 			'imgs' => [ 'paul-1.jpg', 'paul-2.jpg', 'paul-3.jpg' ],
@@ -102,7 +102,7 @@ class JGDevController extends Controller
 		return view( 'project-template', [
 			'title' => 'Vital Care Lab',
 			'category' => 'Web, Medical, Blog',
-			'tech_stack' => 'WordPress, Custom Post Type, ',
+			'tech_stack' => 'WordPress, Avada',
 			'url' => '',
 			'description' => 'Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.',
 			'imgs' => [ 'vital-1.jpg' ],

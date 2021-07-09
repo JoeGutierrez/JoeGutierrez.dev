@@ -84,10 +84,12 @@
 @endif
 								</ul>
 							</div>
+<?php /*
 							<div class="portfolio-description">
 								<h2>Description</h2>
 								<p>{{ $description }}</p>
 							</div>
+*/ ?>
 						</div>
 
 					</div>
