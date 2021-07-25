@@ -3,10 +3,23 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\ViewErrorBag;
 
 class JGDevController extends Controller
 {
 	public function home() {
+		$errors = session()->get( 'errors', app( ViewErrorBag::class ) );
+
+		if( $errors->hasAny( [ 'home_page_contact_form_name', 'home_page_contact_form_email', 'home_page_contact_form_subject', 'home_page_contact_form_message' ] ) ) {
+			echo <<< html
+				<script type="application/javascript">
+					document.addEventListener( 'DOMContentLoaded', function( eventObj ) {
+						scrollToContactSection();
+					} );
+				</script>
+html;
+		}
+
 		return view( 'home' );
 	}
 

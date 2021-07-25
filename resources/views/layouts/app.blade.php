@@ -110,7 +110,7 @@
 		<script type="application/javascript" src="/js/main.js"></script><!-- Template Main JS File -->
 		<script type="application/javascript" src="/js/script.js"></script><!-- Main JS File -->
 */ ?>
-		<script type="application/javascript" src="/js/app.js"></script>
-
+		<script type="application/javascript" src="{{ asset( 'js/app.js' ) }}"></script>
+		<script type="application/javascript" src="{{ asset( 'js/script.js' ) }}"></script>{{-- Added: 07/18/2021. --}}
 	</body>
 </html>

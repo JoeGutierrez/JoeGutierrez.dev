@@ -14,5 +14,6 @@ require( './portfolio/purecounter' );
 require( './portfolio/typed' );
 require( './portfolio/noframework.waypoints' );
 require( './portfolio/main' );
+require( './form-validation-jquery-ajax' ); // Added: 07/23/2021.
 
 require( './script' );

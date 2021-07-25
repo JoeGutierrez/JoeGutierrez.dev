@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\JGDevController;
+use App\Http\Controllers\FormSubmissionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,7 +21,8 @@ Route::get( '/', function() {
 } );
 */
 
-Route::get( '/', [ JGDevController::class, 'home' ] )->name( 'home' );
+Route::get( '/', [ JGDevController::class, 'home' ] )->name( 'home.get' );
+Route::post( '/', [ FormSubmissionController::class, 'form_submission' ] )->name( 'home.post' ); // Added: 07/18/2021.
 
 Route::get( 'ce', [ JGDevController::class, 'condor_elite' ] )->name( 'condorElite' );
 

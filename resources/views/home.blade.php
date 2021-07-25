@@ -10,7 +10,7 @@
 <?php // 				<p>Welcome to my online portfolio. I'm Joe, a Full Stack Engineer since 2010. My passion for programming and note-taking comes from having studied Computer Science and Journalism in college. I have experience in information systems with a career history of achievement, facilitating company growth through the implementation and maintenance of progressive IT, web application and automation initiatives.</p> ?>
 					</div>
 
-					<div class="row" style="justify-content: center;">
+					<div class="row">
 						<div class="col-lg-3 text-center">
 							<img data-src="/img/joe.jpg" class="img-fluid lozad" alt="">
 						</div>
@@ -290,7 +290,7 @@
 								</ul>
 							</div>
 							<div class="resume-item">
-								<h4>Web Developer &amp; System Admin</h4>
+								<h4>Lead Web Developer &amp; System Admin</h4>
 								<h5><i class="bi bi-calendar3"></i> 2015 - 2016</h5>
 								<p><em>Zero Six Media, Irwindale, CA</em></p>
 								<ul>
@@ -760,28 +760,49 @@
 						</div>
 */ ?>
 
-						<div class="col-lg-8 mt-5 mt-lg-0 mx-auto">
-							<form action="forms/contact.php" method="post" role="form" class="php-email-form">
+						<div id="homePageContactFormContainer" class="col-lg-8 mt-5 mt-lg-0 mx-auto">
+
+							<div class="alert alert-success @if( request()->isMethod( 'POST' ) && request( 'form_id' ) === 'homePageContactForm' ) d-block @else d-none @endif" role="alert">
+								Your message has been sent. Thank you.
+							</div>
+
+							<form id="homePageContactForm" class="php-email-form @if( request()->isMethod( 'POST' ) && request( 'form_id' ) === 'homePageContactForm' ) d-none @else d-block @endif" action="/" method="post" role="form">
+								@csrf
+
+								<input type="hidden" name="form_id" id="form_id" value="homePageContactForm">
 								<div class="row">
 									<div class="col-md-6 form-group">
-										<input type="text" name="name" class="form-control" id="name" placeholder="Name" required>
+										<input type="text" name="home_page_contact_form_name" class="form-control @error( 'home_page_contact_form_name' ) is-invalid @enderror" id="home_page_contact_form_name" placeholder="Name" maxlength="30" value="{{ old( 'home_page_contact_form_name' ) }}">
+
+										<span class="invalid-feedback font-weight-bold @error( 'home_page_contact_form_name' ) d-inline @enderror" role="alert">
+											{{ $errors->get( 'home_page_contact_form_name' )[ 0 ] ?? '' }}
+										</span>
 									</div>
 									<div class="col-md-6 form-group mt-3 mt-md-0">
-										<input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
+										<input type="text" name="home_page_contact_form_email" class="form-control @error( 'home_page_contact_form_email' ) is-invalid @enderror" id="home_page_contact_form_email" placeholder="Email" maxlength="50" value="{{ old( 'home_page_contact_form_email' ) }}">
+
+										<span class="invalid-feedback font-weight-bold @error( 'home_page_contact_form_email' ) d-inline @enderror" role="alert">
+											{{ $errors->get( 'home_page_contact_form_email' )[ 0 ] ?? '' }}
+										</span>
 									</div>
 								</div>
 								<div class="form-group mt-3">
-									<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+									<input type="text" name="home_page_contact_form_subject" class="form-control @error( 'home_page_contact_form_subject' ) is-invalid @enderror" id="home_page_contact_form_subject" placeholder="Subject" maxlength="80" value="{{ old( 'home_page_contact_form_subject' ) }}">
+
+									<span class="invalid-feedback font-weight-bold @error( 'home_page_contact_form_subject' ) d-inline @enderror" role="alert">
+										{{ $errors->get( 'home_page_contact_form_subject' )[ 0 ] ?? '' }}
+									</span>
 								</div>
 								<div class="form-group mt-3">
-									<textarea class="form-control" name="message" rows="5" placeholder="Message" required style="resize: none;"></textarea>
+									<textarea name="home_page_contact_form_message" class="form-control @error( 'home_page_contact_form_message' ) is-invalid @enderror" rows="5" maxlength="500" placeholder="Message">{{ old( 'home_page_contact_form_message' ) }}</textarea>
+
+									<span class="invalid-feedback font-weight-bold @error( 'home_page_contact_form_message' ) d-inline @enderror" role="alert">
+										{{ $errors->get( 'home_page_contact_form_message' )[ 0 ] ?? '' }}
+									</span>
 								</div>
-								<div class="my-3">
-									<div class="loading">Loading</div>
-									<div class="error-message"></div>
-									<div class="sent-message">Your message has been sent. Thank you!</div>
+								<div class="text-center">
+									<button type="submit">Send Message</button>
 								</div>
-								<div class="text-center"><button type="submit">Send Message</button></div>
 							</form>
 						</div>
 
