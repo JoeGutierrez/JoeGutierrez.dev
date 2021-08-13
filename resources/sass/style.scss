@@ -105,6 +105,41 @@ div.portfolio-wrap:hover img.img-fluid {
 
 section#resume div#resumeSummary ul { list-style-type: none; padding: 0; margin: 0; }
 
+// Services Section ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+img.servicesBackgroundShape { position: absolute; top: 0; left: 0; vertical-align: middle; width: 100px; height: 100px; } // Put the SVG shapes behind the service icons. I needed to do this when I switched to using .svg files instead of <svg> code. Source: The Bootstrap theme's CSS taken using DevTool's inspector. Added: 07/25/2021.
+
+// The following hover transitions were all added on 07/25/2021, taken from the Bootstrap theme's CSS.
+.services .iconbox-blue:hover img {
+	filter: brightness( 0 ) saturate( 100% ) invert( 65% ) sepia( 47% ) saturate( 3730% ) hue-rotate( 182deg ) brightness( 102% ) contrast( 101% );
+	transition: filter .1s ease-in-out;
+}
+
+.services .iconbox-orange:hover img {
+	filter: brightness( 0 ) saturate( 100% ) invert( 88% ) sepia( 8% ) saturate( 6819% ) hue-rotate( 311deg ) brightness( 103% ) contrast( 101% );
+	transition: filter .1s ease-in-out;
+}
+
+.services .iconbox-pink:hover img {
+	filter: brightness( 0 ) saturate( 100% ) invert( 13% ) sepia( 100% ) saturate( 7138% ) hue-rotate( 328deg ) brightness( 92% ) contrast( 98% );
+	transition: filter .1s ease-in-out;
+}
+
+.services .iconbox-yellow:hover img {
+	filter: brightness( 0 ) saturate( 100% ) invert( 72% ) sepia( 86% ) saturate( 460% ) hue-rotate( 339deg ) brightness( 100% ) contrast( 102% );
+	transition: filter .1s ease-in-out;
+}
+
+.services .iconbox-red:hover img {
+	filter: brightness( 0 ) saturate( 100% ) invert( 51% ) sepia( 49% ) saturate( 5641% ) hue-rotate( 344deg ) brightness( 101% ) contrast( 101% );
+	transition: filter .1s ease-in-out;
+}
+
+.services .iconbox-teal:hover img {
+	filter: brightness( 0 ) saturate( 100% ) invert( 74% ) sepia( 65% ) saturate( 4044% ) hue-rotate( 131deg ) brightness( 108% ) contrast( 87% );
+	transition: filter .1s ease-in-out;
+}
+
 // Tech Stack Section ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 div.row.skills-content div.progress i.val { display: none; } // Hide the percentages. Added: 05/31/2021.

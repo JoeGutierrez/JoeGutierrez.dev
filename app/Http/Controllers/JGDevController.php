@@ -93,7 +93,7 @@ html;
 		return view( 'project-template', [
 			'title' => 'Company Vault',
 			'category' => 'Web',
-			'tech_stack' => 'WordPress',
+			'tech_stack' => 'WordPress, Avada theme',
 			'url' => '',
 			'description' => 'Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.',
 			'imgs' => [ 'vault-1.jpg', 'vault-2.jpg', 'vault-3.jpg' ],
@@ -104,7 +104,7 @@ html;
 		return view( 'project-template', [
 			'title' => 'Paul Tzanetopoulos',
 			'category' => 'Art, Personal, Biography, Portfolio, Blog',
-			'tech_stack' => 'WordPress, Avada, Custom Post Type, CSS',
+			'tech_stack' => 'WordPress, Avada theme, Custom Post Type plugin, CSS',
 			'url' => 'https://www.paultzanetopoulos.com/',
 			'description' => 'Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.',
 			'imgs' => [ 'paul-1.jpg', 'paul-2.jpg', 'paul-3.jpg' ],
@@ -115,7 +115,7 @@ html;
 		return view( 'project-template', [
 			'title' => 'Vital Care Lab',
 			'category' => 'Web, Medical, Blog',
-			'tech_stack' => 'WordPress, Avada',
+			'tech_stack' => 'WordPress, Avada theme',
 			'url' => '',
 			'description' => 'Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.',
 			'imgs' => [ 'vital-1.jpg' ],

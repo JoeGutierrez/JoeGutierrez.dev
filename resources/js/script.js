@@ -16,7 +16,7 @@
 
 		if( document.querySelector( 'div.portfolio-container' ) ) { // Prevent the "Uncaught TypeError: Failed to execute 'observe' on 'MutationObserver': parameter 1 is not of type 'Node'" when observer.observe( target, config ); is called from a "Project Information" page, since those pages don't have a <div class="portfolio-container"> element. Source: Myself. 05/24/2021.
 
-			const lozadObserver = lozad(); // Lazy loads elements with the default selector of '.lozad'. Source: https://www.npmjs.com/package/lozad Added: 05/01/2021.
+			const lozadObserver = lozad(); // Initialize Lozad.js to lazy load images with the "lozad" class. Source: https://www.npmjs.com/package/lozad Added: 05/01/2021.
 			lozadObserver.observe();
 
 			var numberOfPortfolioImagesLoaded = 0,

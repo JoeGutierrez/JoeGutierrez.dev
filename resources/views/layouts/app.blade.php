@@ -8,41 +8,20 @@
 		<meta content="" name="keywords">
 
 		<!-- Favicons -->
-		<link href="/img/favicon.ico" rel="icon">
-		<link href="/img/apple-touch-icon.png" rel="apple-touch-icon">
+		<link href="{{ asset( 'img/favicon.ico' ) }}" rel="icon">
+		<link href="{{ asset( 'img/apple-touch-icon.png' ) }}" rel="apple-touch-icon">
 
 		<!-- Google Fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-		<!-- Vendor CSS Files -->
-		<link rel="stylesheet" href="{{ asset('css/app.css') }}">
-		<link rel="stylesheet" href="{{ asset('css/style.css') }}">
-<?php /*
-		<link href="css/aos.css" rel="stylesheet">
-		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<link href="css/bootstrap-icons.css" rel="stylesheet">
-		<link href="css/boxicons.min.css" rel="stylesheet">
-		<link href="css/glightbox.min.css" rel="stylesheet">
-		<link href="css/swiper-bundle.min.css" rel="stylesheet">
-
-		<!-- Portfolio Main CSS File -->
-		<link href="css/portfolio.css" rel="stylesheet">
-
-		<link href="css/style.css" rel="stylesheet">
-
-		<!-- =======================================================
-		* Template Name: MyResume - v4.0.1
-		* Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-		* Author: BootstrapMade.com
-		* License: https://bootstrapmade.com/license/
-		======================================================== -->
-*/ ?>
+		<!-- CSS -->
+		<link rel="stylesheet" href="{{ asset( 'css/app.css' ) }}">
+		<link rel="stylesheet" href="{{ asset( 'css/style.css' ) }}">
 	</head>
 	<body>
-		<!-- ======= Mobile nav toggle button ======= -->
-		<!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
-		<i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
-		<!-- ======= Header ======= -->
+		<i class="bi bi-list mobile-nav-toggle d-xl-none"></i><!-- Mobile nav toggle button. -->
+
+		<!-- Header -->
 		<header id="header" class="d-flex flex-column justify-content-center">
 
 			<nav id="navbar" class="navbar nav-menu">
@@ -54,28 +33,27 @@
 					<li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
 					<li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
 				</ul>
-			</nav><!-- .nav-menu -->
+			</nav><!-- End .nav-menu. -->
 
-		</header><!-- End Header -->
+		</header><!-- End header. -->
 
-		<!-- ======= Hero Section ======= -->
+		<!-- Hero section. -->
 		<section id="hero" class="hpVideo">
 			<div class="container-fluid">
 				<video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" id="videoDesktop">
-					<source src="/videos/services.mp4" type="video/mp4">
+					<source src="{{ asset( 'videos/services.mp4' ) }}" type="video/mp4">
 				</video>
 				<video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" id="videoMobile">
-					<source src="/videos/services-mobile.mp4" type="video/mp4">
+					<source src="{{ asset( 'videos/services-mobile.mp4' ) }}" type="video/mp4">
 				</video>
 			</div>
-		</section>
-		<!-- End Hero -->
+		</section><!-- End #hero section. -->
 
 		<main id="main">
 @yield( 'content' )
-		</main><!-- End #main -->
+		</main>
 
-		<!-- ======= Footer ======= -->
+		<!-- Footer -->
 		<footer id="footer">
 			<div class="container">
 <?php /*
@@ -90,26 +68,14 @@
 				</div>
 */ ?>
 				<div class="copyright">
-					&copy;{{ now()->year }} Copyright <?php //<strong><span> ?>JoeGutierrez.dev<?php //</span></strong> ?>. All Rights Reserved.
+					&copy;{{ now()->year }} JoeGutierrez.dev. <br class="d-sm-none">All Rights Reserved.
 				</div>
 			</div>
-		</footer><!-- End Footer -->
+		</footer><!-- End footer. -->
 
-		<div id="preloader"></div>{{-- This is the spinner that shows when the page is loading. --}}
+		<div id="preloader"></div><!-- Page loading spinner. -->
 		<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-<?php /*
-		<script type="application/javascript" src="/js/aos.js"></script><!-- Vendor JS Files -->
-		<script type="application/javascript" src="/js/bootstrap.bundle.js"></script>
-		<script type="application/javascript" src="/js/glightbox.js"></script>
-		<script type="application/javascript" src="/js/isotope.pkgd.js"></script>
-		<script type="application/javascript" src="/js/purecounter.js"></script>
-		<script type="application/javascript" src="/js/swiper-bundle.min.js"></script>
-		<script type="application/javascript" src="/js/typed.js"></script>
-		<script type="application/javascript" src="/js/noframework.waypoints.js"></script>
-		<script type="application/javascript" src="/js/main.js"></script><!-- Template Main JS File -->
-		<script type="application/javascript" src="/js/script.js"></script><!-- Main JS File -->
-*/ ?>
 		<script type="application/javascript" src="{{ asset( 'js/app.js' ) }}"></script>
 		<script type="application/javascript" src="{{ asset( 'js/script.js' ) }}"></script>{{-- Added: 07/18/2021. --}}
 	</body>
