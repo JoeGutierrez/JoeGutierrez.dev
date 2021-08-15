@@ -67,7 +67,8 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => 'America/Los_Angeles', // Added: 08/14/2021.
+//    'timezone' => 'UTC',
 
     /*
     |--------------------------------------------------------------------------
@@ -190,6 +191,7 @@ return [
 
     'aliases' => [
 
+		'Helper' => App\Helpers\Helper::class, // Added: 08/14/2021.
         'App' => Illuminate\Support\Facades\App::class,
         'Arr' => Illuminate\Support\Arr::class,
         'Artisan' => Illuminate\Support\Facades\Artisan::class,

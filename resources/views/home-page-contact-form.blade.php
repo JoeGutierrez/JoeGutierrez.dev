@@ -22,19 +22,30 @@
 										</span>
 									</div>
 								</div>
-								<div class="form-group mt-3">
-									<input type="text" name="home_page_contact_form_subject" class="form-control @error( 'home_page_contact_form_subject' ) is-invalid @enderror" id="home_page_contact_form_subject" placeholder="Subject" maxlength="80" value="{{ old( 'home_page_contact_form_subject' ) }}">
+								<div class="row">
+									<div class="col-md-6 form-group mt-3">
+										<input type="text" name="home_page_contact_form_phone" class="form-control @error( 'home_page_contact_form_phone' ) is-invalid @enderror" id="home_page_contact_form_phone" placeholder="Phone" maxlength="20" data-mask="(000) 000-0000" value="{{ old( 'home_page_contact_form_phone' ) }}"><?php // Added: 08/14/2021. ?>
 
-									<span class="invalid-feedback font-weight-bold @error( 'home_page_contact_form_subject' ) d-inline @enderror" role="alert">
-										{{ $errors->get( 'home_page_contact_form_subject' )[ 0 ] ?? '' }}
-									</span>
+										<span class="invalid-feedback font-weight-bold @error( 'home_page_contact_form_phone' ) d-inline @enderror" role="alert">
+											{{ $errors->get( 'home_page_contact_form_phone' )[ 0 ] ?? '' }}
+										</span>
+									</div>
+									<div class="col-md-6 form-group mt-3">
+										<input type="text" name="home_page_contact_form_subject" class="form-control @error( 'home_page_contact_form_subject' ) is-invalid @enderror" id="home_page_contact_form_subject" placeholder="Subject" maxlength="80" value="{{ old( 'home_page_contact_form_subject' ) }}">
+
+										<span class="invalid-feedback font-weight-bold @error( 'home_page_contact_form_subject' ) d-inline @enderror" role="alert">
+											{{ $errors->get( 'home_page_contact_form_subject' )[ 0 ] ?? '' }}
+										</span>
+									</div>
 								</div>
-								<div class="form-group mt-3">
-									<textarea name="home_page_contact_form_message" class="form-control @error( 'home_page_contact_form_message' ) is-invalid @enderror" rows="5" maxlength="500" placeholder="Message">{{ old( 'home_page_contact_form_message' ) }}</textarea>
+								<div class="row">
+									<div class="form-group mt-3">
+										<textarea name="home_page_contact_form_message" class="form-control @error( 'home_page_contact_form_message' ) is-invalid @enderror" rows="5" maxlength="500" placeholder="Message">{{ old( 'home_page_contact_form_message' ) }}</textarea>
 
-									<span class="invalid-feedback font-weight-bold @error( 'home_page_contact_form_message' ) d-inline @enderror" role="alert">
-										{{ $errors->get( 'home_page_contact_form_message' )[ 0 ] ?? '' }}
-									</span>
+										<span class="invalid-feedback font-weight-bold @error( 'home_page_contact_form_message' ) d-inline @enderror" role="alert">
+											{{ $errors->get( 'home_page_contact_form_message' )[ 0 ] ?? '' }}
+										</span>
+									</div>
 								</div>
 								<div class="text-center">
 									<button type="submit">Send Message</button>

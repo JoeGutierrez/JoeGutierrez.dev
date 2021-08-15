@@ -25,10 +25,11 @@ class FormValidationRequest extends FormRequest
 	public function rules()
 	{
 		return [
-			'home_page_contact_form_name' => 'required|max:30|min:3',
+			'home_page_contact_form_name' => 'required|min:3|max:30',
 			'home_page_contact_form_email' => 'required|string|email:rfc,dns,filter|max:50',
-			'home_page_contact_form_subject' => 'required|max:80|min:3',
-			'home_page_contact_form_message' => 'required|max:500|min:5'
+			'home_page_contact_form_phone' => 'required|string|min:14|max:20', // Added: 08/14/2021.
+			'home_page_contact_form_subject' => 'required|min:3|max:80',
+			'home_page_contact_form_message' => 'required|min:5|max:500'
 		];
 	}
 
@@ -42,6 +43,7 @@ class FormValidationRequest extends FormRequest
 		return [
 			'home_page_contact_form_name' => 'name',
 			'home_page_contact_form_email' => 'email',
+			'home_page_contact_form_phone' => 'phone', // Added: 08/14/2021.
 			'home_page_contact_form_subject' => 'subject',
 			'home_page_contact_form_message' => 'message'
 		];
