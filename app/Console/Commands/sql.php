@@ -2,7 +2,7 @@
 
 // Created: 08/13/2021.
 // The command I used to create this file was: php artisan make:command sql
-// The command I ran to create the database was: php artisan sql:createdb joegutierrez_dev.
+// The command I ran to create the database was: php artisan sql:createdb joegutierrez_dev
 
 namespace App\Console\Commands;
 

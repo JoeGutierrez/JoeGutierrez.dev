@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests\FormValidationRequest;
 use Helper;
 use App\Models\ContactFormSubmission;
+use Illuminate\Support\Facades\Mail;
 
 class FormSubmissionController extends Controller
 {
@@ -18,7 +19,7 @@ class FormSubmissionController extends Controller
 		$email = strip_tags( request( 'home_page_contact_form_email' ) );
 		$phone = strip_tags( request( 'home_page_contact_form_phone' ) );
 		$subject = strip_tags( request( 'home_page_contact_form_subject' ) );
-		$message = strip_tags( request( 'home_page_contact_form_message' ) );
+		$body = strip_tags( request( 'home_page_contact_form_message' ) );
 
 		ContactFormSubmission::create( // Insert the contact form submission into the database. Added: 08/14/2021.
 			[
@@ -27,7 +28,7 @@ class FormSubmissionController extends Controller
 				'email' => $email,
 				'phone' => $phone,
 				'subject' => $subject,
-				'message' => $message
+				'message' => $body
 			]
 		);
 
@@ -41,25 +42,20 @@ class FormSubmissionController extends Controller
 html;
 		}
 
-		$to = 'Joe Gutierrez <joegutierrezdev@gmail.com>';
-		$subject = 'JoeGutierrez.dev Form Submission, Subject: ' . $subject;
-		$message = 'Message:<br>' . $message . '<br>';
+		$admin_to = [ 'joegutierrezdev@gmail.com' => 'Joe Gutierrez' ];
+		$admin_subject = 'JoeGutierrez.dev Form Submission, Subject: ' . $subject;
 
-		$headers = [
-			'MIME-Version: 1.0',
-			'Content-type: text/html; charset=iso-8859-1',
-			'X-Priority: 3',
-			'X-Mailer: PHP ' . phpversion(),
-			'Organization: JoeGutierrez.dev',
-			'From: ' . $name . ' <' . $email . '>',
-			'Cc: Joe Gutierrez <ninjajoeg@gmail.com>',
-			'Reply-To: ' . $name . ' <' . $email . '>',
-			'Return-Path: Joe Gutierrez <joegutierrezdev@gmail.com>'
+		$data = [
+			'name' => $name,
+			'email' => $email,
+			'phone' => $phone,
+			'subject' => $subject,
+			'body' => $body
 		];
 
-		$headers = implode( "\r\n", $headers ); // "\r\n" must be in double quotes--NOT single. Otherwise, the headers won't be displayed right.
-
-		mail( $to, $subject, $message, $headers );
+		Mail::send( 'emails.home-page-form-submission', $data, function ( $admin_email ) use ( $admin_to, $admin_subject ) { // Added: 08/28/2021.
+			$admin_email->to( $admin_to )->subject( $admin_subject );
+		} );
 
 		return view( 'home' );
 	}
