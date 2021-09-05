@@ -71,9 +71,9 @@ class Handler extends ExceptionHandler
 	public function sendEmail( Throwable $exception )
 	{
 		try {
-			if( get_class( $exception ) === 'Facade\Ignition\Exceptions\ViewException' ) { // Prevent the "FlattenException::create() must be an instance of Exception, instance of TypeError given" error in the logs.
+			if( get_class( $exception ) === 'Facade\Ignition\Exceptions\ViewException' ) { // Prevent the "FlattenException::create() must be an instance of Exception, instance of TypeError given" error in the logs. Source: https://stackoverflow.com/questions/30331322/how-can-i-check-if-a-object-is-an-instance-of-a-specific-class#65158321 Added: 09/05/2021.
 				$e = FlattenException::create( $exception );
-				$handler = new HtmlErrorRenderer( true ); // True raises the debug flag.
+				$handler = new HtmlErrorRenderer( true ); // The true Boolean raises the debug flag.
 
 				$content = $handler->getBody( $e );
 				$content = strlen( $content ) > 20000 ? substr( $content, 0, 20000 ) : $content; // If the email content is greater than 20,000 characters, trim it to 20,000 characters.
