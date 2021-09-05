@@ -10,6 +10,7 @@ use Throwable;
 use Symfony\Component\ErrorHandler\ErrorRenderer\HtmlErrorRenderer;
 use Symfony\Component\ErrorHandler\Exception\FlattenException;
 use Illuminate\Support\Facades\Mail;
+use DOMDocument;
 
 class Handler extends ExceptionHandler
 {
@@ -70,20 +71,26 @@ class Handler extends ExceptionHandler
 	public function sendEmail( Throwable $exception )
 	{
 		try {
-			$e = FlattenException::create( $exception );
-			$handler = new HtmlErrorRenderer( true ); // True raises the debug flag.
+			if( get_class( $exception ) === 'Facade\Ignition\Exceptions\ViewException' ) { // Prevent the "FlattenException::create() must be an instance of Exception, instance of TypeError given" error in the logs.
+				$e = FlattenException::create( $exception );
+				$handler = new HtmlErrorRenderer( true ); // True raises the debug flag.
 
-			$content = $handler->getBody( $e );
-			$content = strlen( $content ) > 20000 ? substr( $content, 0, 20000 ) : $content; // If the email content is greater than 20,000 characters, trim it to 20,000 characters.
+				$content = $handler->getBody( $e );
+				$content = strlen( $content ) > 20000 ? substr( $content, 0, 20000 ) : $content; // If the email content is greater than 20,000 characters, trim it to 20,000 characters.
 
-			$data = [
-				'content' => $content,
-				'full_url' => url()->full()
-			];
+				$dom = new DOMDocument;
+				$dom->loadHTML( $content, LIBXML_NOERROR ); // The LIBXML_NOERROR argument is to suppress (in the logs) the ErrorException: DOMDocument::loadHTML(): Tag svg invalid in Entity, line: 6 in app/Exceptions/Handler.php:82. That error happens because loadHTML() doesn't support HTML5 elements. Sources: https://stackoverflow.com/questions/9149180/domdocumentloadhtml-error#64471875 https://www.php.net/manual/en/domdocument.loadhtml.php#118107 Added: 09/05/2021.
+				$h1 = $dom->getElementsByTagName( 'h1' )[ 0 ]->textContent;
 
-			Mail::send( 'emails.exception', $data, function( $message ) {
-				$message->to( [ 'joegutierrezdev@gmail.com' => 'Joe Gutierrez' ] )->subject( 'JoeGutierrez.dev Exception: ' . request()->fullUrl() );
-			} );
+				$data = [
+					'content' => $content,
+					'full_url' => url()->full(),
+				];
+
+				Mail::send( 'emails.exception', $data, function( $message ) use ( $h1 ) {
+					$message->to( [ 'joegutierrezdev@gmail.com' => 'Joe Gutierrez' ] )->subject( 'JoeGutierrez.dev Exception: ' . $h1 );
+				} );
+			}
 		}
 		catch( Throwable $exception ) {
 			Log::error( $exception );
