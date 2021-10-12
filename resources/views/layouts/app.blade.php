@@ -30,7 +30,7 @@
 					<li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
 					<li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
 					<li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
-					<li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
+					<li><a href="#abilities" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Abilities</span></a></li>
 					<li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
 				</ul>
 			</nav><!-- End .nav-menu. -->
@@ -41,10 +41,10 @@
 		<section id="hero" class="hpVideo">
 			<div class="container-fluid">
 				<video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" id="videoDesktop">
-					<source src="{{ asset( 'videos/services.mp4' ) }}" type="video/mp4">
+					<source src="{{ asset( 'videos/abilities.mp4' ) }}" type="video/mp4">
 				</video>
 				<video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" id="videoMobile">
-					<source src="{{ asset( 'videos/services-mobile.mp4' ) }}" type="video/mp4">
+					<source src="{{ asset( 'videos/abilities-mobile.mp4' ) }}" type="video/mp4">
 				</video>
 			</div>
 		</section><!-- End #hero section. -->

@@ -66,52 +66,6 @@
 							</div>
 
 							<div class="progress">
-								<span class="skill">SQL<i class="val">100%</i></span>
-								<div class="progress-bar-wrap">
-									<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-								</div>
-							</div>
-
-							<div class="progress">
-								<span class="skill">JavaScript<i class="val">100%</i></span>
-								<div class="progress-bar-wrap">
-									<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-								</div>
-							</div>
-
-							<div class="progress">
-								<span class="skill">HTML5<i class="val">100%</i></span>
-								<div class="progress-bar-wrap">
-									<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-								</div>
-							</div>
-
-							<div class="progress">
-								<span class="skill">jQuery<i class="val">100%</i></span>
-								<div class="progress-bar-wrap">
-									<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-								</div>
-							</div>
-
-							<div class="progress">
-								<span class="skill">CSS<i class="val">100%</i></span>
-								<div class="progress-bar-wrap">
-									<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-								</div>
-							</div>
-
-							<div class="progress">
-								<span class="skill">Nginx<i class="val">100%</i></span>
-								<div class="progress-bar-wrap">
-									<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-								</div>
-							</div>
-
-						</div>
-
-						<div class="col-lg-6">
-
-							<div class="progress">
 								<span class="skill">PHP<i class="val">100%</i></span>
 								<div class="progress-bar-wrap">
 									<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
@@ -119,7 +73,7 @@
 							</div>
 
 							<div class="progress">
-								<span class="skill">Linux<i class="val">100%</i></span>
+								<span class="skill">SQL<i class="val">100%</i></span>
 								<div class="progress-bar-wrap">
 									<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
 								</div>
@@ -133,7 +87,7 @@
 							</div>
 
 							<div class="progress">
-								<span class="skill">WordPress<i class="val">100%</i></span>
+								<span class="skill">Linux<i class="val">100%</i></span>
 								<div class="progress-bar-wrap">
 									<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
 								</div>
@@ -147,6 +101,45 @@
 							</div>
 
 							<div class="progress">
+								<span class="skill">Adobe Creative Suite<i class="val">100%</i></span>
+								<div class="progress-bar-wrap">
+									<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="col-lg-6">
+
+							<div class="progress">
+								<span class="skill">React Native<i class="val">100%</i></span>
+								<div class="progress-bar-wrap">
+									<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+							</div>
+
+							<div class="progress">
+								<span class="skill">JavaScript<i class="val">100%</i></span>
+								<div class="progress-bar-wrap">
+									<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+							</div>
+
+							<div class="progress">
+								<span class="skill">CSS<i class="val">100%</i></span>
+								<div class="progress-bar-wrap">
+									<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+							</div>
+
+							<div class="progress">
+								<span class="skill">HTML5<i class="val">100%</i></span>
+								<div class="progress-bar-wrap">
+									<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+							</div>
+
+							<div class="progress">
 								<span class="skill">Bootstrap<i class="val">100%</i></span>
 								<div class="progress-bar-wrap">
 									<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
@@ -154,7 +147,14 @@
 							</div>
 
 							<div class="progress">
-								<span class="skill">Adobe Creative Suite<i class="val">100%</i></span>
+								<span class="skill">jQuery<i class="val">100%</i></span>
+								<div class="progress-bar-wrap">
+									<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+							</div>
+
+							<div class="progress">
+								<span class="skill">WordPress<i class="val">100%</i></span>
 								<div class="progress-bar-wrap">
 									<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
 								</div>
@@ -222,10 +222,11 @@
 								<h5><i class="bi bi-calendar3"></i> 2020 - Present</h5>
 								<p><em>Nevada Corporate Headquarters, Las Vegas, NV</em></p>
 								<ul>
-									<li>Developed Client Portal application on a cloud server using a Laravel backend and SQL database.</li>
-									<li>Connected Web Apps to company CRM consuming REST API & working with JSON data.</li>
+									<li>Developed Client Portal application on a cloud server using a Laravel backend with user login authentication, SQL database and online payment processing via Authorize.net API.</li>
+									<li>Connected Web Apps to company CRM consuming REST API and working with JSON data.</li>
+									<li>Designed responsive user interfaces with Bootstrap and custom Media Queries optimized for mobile, tablet and desktop.</li>
 									<li>Created main company website, including database integration and UI / UX.</li>
-									<li>Maintain all webservers implementing security and data protection.</li>
+									<li>Maintained all webservers implementing security, data protection and vertical scaling.</li>
 								</ul>
 							</div>
 							<div class="resume-item">
@@ -233,11 +234,10 @@
 								<h5><i class="bi bi-calendar3"></i> 2016 - 2020</h5>
 								<p><em>Discount Dance, Anaheim, CA</em></p>
 								<ul>
-									<li>Extensive coding experience for ecommerce stores in PHP, MySQL, JavaScript, CSS and Node.js.</li>
-									<li>Developed asynchronous dashboard using jQuery AJAX to manage and monitor inventory.</li>
-									<li>Integrated custom APIs to send and receive data using cURL and AJAX in JSON and XML.</li>
-									<li>Created responsive user interfaces using Media Queries optimized for mobile, tablet and desktop.</li>
-									<li>Implemented Web APIs from Mouseflow, InkSoft and Cordial.</li>
+									<li>Integrated APIs into custom ecommerce store to send and receive JSON and XML data using cURL and AJAX.</li>
+									<li>Created admin dashboard with internal tools for marketing team to manage and track purchases with a custom-made asynchronous Order Monitor.</li>
+									<li>Extensive coding experience in PHP, MySQL, JavaScript, CSS and Node.js.</li>
+									<li>Implemented Web APIs from InkSoft, Mouseflow and Cordial into custom shopping cart platform.</li>
 								</ul>
 							</div>
 							<div class="resume-item">
@@ -462,12 +462,13 @@
 				</div>
 			</section><!-- End #portfolio section. -->
 
-			<!-- Services section. -->
-			<section id="services" class="services">
+			<!-- Abilities section. -->
+			<section id="abilities" class="abilities">
+<?php // Renamed from "services" to "abilities" on 10/11/2021. ?>
 				<div class="container" data-aos="fade-up">
 
 					<div class="section-title">
-						<h2>My Services</h2>
+						<h2>My Abilities</h2>
 <?php //				<p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> ?>
 					</div>
 
@@ -476,18 +477,29 @@
 						<div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
 							<div class="icon-box iconbox-blue">
 								<div class="icon">
-									<img data-src="{{ asset( 'img/services-bg-shape-1.svg' ) }}" alt="Services background shape 1" class="servicesBackgroundShape lozad">
+									<img data-src="{{ asset( 'img/abilities-bg-shape-1.svg' ) }}" alt="Abilities background shape 1" class="abilitiesBackgroundShape lozad">
 									<i class="bx bx-code-alt"></i>
 								</div>
-								<h4>Development</h4>
+								<h4>Web Development</h4>
 								<p>I build custom-tailored solutions based on your technical specifications.</p>
 							</div>
 						</div>
 
-						<div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+						<div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
+							<div class="icon-box iconbox-teal">
+								<div class="icon">
+									<img data-src="{{ asset( 'img/abilities-bg-shape-6.svg' ) }}" alt="Abilities background shape 6" class="abilitiesBackgroundShape lozad">
+									<i class='bx bx-mobile-alt'></i>
+								</div>
+								<h4>Mobile App Development</h4>
+								<p>Native iOS and Android mobile app development using React Native.</p>
+							</div>
+						</div>
+
+						<div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="200">
 							<div class="icon-box iconbox-orange">
 								<div class="icon">
-									<img data-src="{{ asset( 'img/services-bg-shape-2.svg' ) }}" alt="Services background shape 2" class="servicesBackgroundShape lozad">
+									<img data-src="{{ asset( 'img/abilities-bg-shape-2.svg' ) }}" alt="Abilities background shape 2" class="abilitiesBackgroundShape lozad">
 									<i class="bx bx-table"></i>
 								</div>
 								<h4>Database Administration</h4>
@@ -495,21 +507,21 @@
 							</div>
 						</div>
 
-						<div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+						<div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
 							<div class="icon-box iconbox-pink">
 								<div class="icon">
-									<img data-src="{{ asset( 'img/services-bg-shape-3.svg' ) }}" alt="Services background shape 3" class="servicesBackgroundShape lozad">
+									<img data-src="{{ asset( 'img/abilities-bg-shape-3.svg' ) }}" alt="Abilities background shape 3" class="abilitiesBackgroundShape lozad">
 									<i class="bx bxs-network-chart"></i>
 								</div>
 								<h4>APIs</h4>
-								<p>I'm passionate about the latest web APIs, whether it's building my own, scaling an API or consuming API data in JSON or XML formats.</p>
+								<p>I'm passionate about the latest web APIs, whether it's building my own, scaling an API or consuming API data in JSON or XML format.</p>
 							</div>
 						</div>
 
 						<div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
 							<div class="icon-box iconbox-yellow">
 								<div class="icon">
-									<img data-src="{{ asset( 'img/services-bg-shape-4.svg' ) }}" alt="Services background shape 4" class="servicesBackgroundShape lozad">
+									<img data-src="{{ asset( 'img/abilities-bg-shape-4.svg' ) }}" alt="Abilities background shape 4" class="abilitiesBackgroundShape lozad">
 									<i class="bx bx-rocket"></i>
 								</div>
 								<h4>Search Engine Optimization</h4>
@@ -520,7 +532,7 @@
 						<div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
 							<div class="icon-box iconbox-red">
 								<div class="icon">
-									<img data-src="{{ asset( 'img/services-bg-shape-5.svg' ) }}" alt="Services background shape 5" class="servicesBackgroundShape lozad">
+									<img data-src="{{ asset( 'img/abilities-bg-shape-5.svg' ) }}" alt="Abilities background shape 5" class="abilitiesBackgroundShape lozad">
 									<i class="bx bx-cart"></i>
 								</div>
 								<h4>E-Commerce</h4>
@@ -528,21 +540,10 @@
 							</div>
 						</div>
 
-						<div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
-							<div class="icon-box iconbox-teal">
-								<div class="icon">
-									<img data-src="{{ asset( 'img/services-bg-shape-6.svg' ) }}" alt="Services background shape 6" class="servicesBackgroundShape lozad">
-									<i class="bx bx-lock"></i>
-								</div>
-								<h4>DNS & SSL Certificates</h4>
-								<p>SSL certificate configuration for secure HTTPS access, web server migration and everything else related to domain name services.</p>
-							</div>
-						</div>
-
 						<div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
 							<div class="icon-box iconbox-orange">
 								<div class="icon">
-									<img data-src="{{ asset( 'img/services-bg-shape-1.svg' ) }}" alt="Services background shape 1" class="servicesBackgroundShape lozad">
+									<img data-src="{{ asset( 'img/abilities-bg-shape-1.svg' ) }}" alt="Abilities background shape 1" class="abilitiesBackgroundShape lozad">
 									<i class='bx bx-data'></i>
 								</div>
 								<h4>Automation</h4>
@@ -553,7 +554,7 @@
 						<div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
 							<div class="icon-box iconbox-blue">
 								<div class="icon">
-									<img data-src="{{ asset( 'img/services-bg-shape-2.svg' ) }}" alt="Services background shape 2" class="servicesBackgroundShape lozad">
+									<img data-src="{{ asset( 'img/abilities-bg-shape-2.svg' ) }}" alt="Abilities background shape 2" class="abilitiesBackgroundShape lozad">
 									<i class="bx bx-server"></i>
 								</div>
 								<h4>Server Admin</h4>
@@ -561,10 +562,10 @@
 							</div>
 						</div>
 
-						<div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+						<div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0 mx-auto" data-aos="zoom-in" data-aos-delay="300">
 							<div class="icon-box iconbox-yellow">
 								<div class="icon">
-									<img data-src="{{ asset( 'img/services-bg-shape-3.svg' ) }}" alt="Services background shape 3" class="servicesBackgroundShape lozad">
+									<img data-src="{{ asset( 'img/abilities-bg-shape-3.svg' ) }}" alt="Abilities background shape 3" class="abilitiesBackgroundShape lozad">
 									<i class="bx bx-line-chart"></i>
 								</div>
 								<h4>Analytics</h4>
@@ -575,7 +576,7 @@
 					</div>
 
 				</div>
-			</section><!-- End #services section. -->
+			</section><!-- End #abilities section. -->
 
 			<!-- Contact section. -->
 			<section id="contact" class="contact">
