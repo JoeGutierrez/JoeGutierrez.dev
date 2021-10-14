@@ -235,7 +235,7 @@
 								<p><em>Discount Dance, Anaheim, CA</em></p>
 								<ul>
 									<li>Integrated APIs into custom ecommerce store to send and receive JSON and XML data using cURL and AJAX.</li>
-									<li>Created admin dashboard with internal tools for marketing team to manage and track purchases with a custom-made asynchronous Order Monitor.</li>
+									<li>Created internal tools admin dashboard for marketing team to manage and track purchases featuring a custom-made asynchronous Order Monitor.</li>
 									<li>Extensive coding experience in PHP, MySQL, JavaScript, CSS and Node.js.</li>
 									<li>Implemented Web APIs from InkSoft, Mouseflow and Cordial into custom shopping cart platform.</li>
 								</ul>
